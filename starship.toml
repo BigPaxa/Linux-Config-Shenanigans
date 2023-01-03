@@ -1,0 +1,30 @@
+format = """
+[░▒▓](#a0ffb5)\
+[  ](bg:#a0ffb5 fg:#090c0c)\
+[](bg:#3c9c58 fg:#a0ffb5)\
+$directory\
+[](fg:#3c9c58 bg:#237d3f)\
+$git_branch\
+$git_status\
+[](fg:#237d3f bg:#14602b)\
+$nodejs\
+$rust\
+$golang\
+$php\
+[](fg:#14602b bg:#002b00)\
+$time\
+[](fg:#002b00 bg:#3c9c58)\
+[](fg:#3c9c58)\
+$character"""
+
+[directory]
+style = "fg:#e3e5e5 bg:#3c9c58"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#002b00"
+format = '[[  $time ](fg:#a0ffb5 bg:#002b00)]($style)'
